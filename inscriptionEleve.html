@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <style>
+         fieldset{
+            padding: 0px;
+            border-radius: 10px;
+            border-color:rgb(6, 6, 153) ;
+         }
+         #num,#date,#classe,#frais{
+            border: none;
+            outline: none;
+            width: 200px;
+            height: 30px;
+            background-color: white;
+         }
+         #num:focus{outline: none;}
+         #date:focus{outline: none;}
+         #classe:focus{outline: none;}
+         #frais:focus{outline: none;}
+         #form{
+            margin-top: 10%;
+            width: 300px;
+            margin: 20px;
+         }
+         body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         }
+         #sub{
+            width: 150px;
+            height: 30px;
+            border-radius: 10px;
+            background-color: rgb(4, 106, 240);
+            color: white;
+            margin-bottom: 10px;
+         }
+         #pres{
+            width: 250px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            background-color: rgb(6, 6, 153);
+         }
+         table{
+            margin: 10%;
+         }
+       </style>
+    </head>
+    <body>
+        <center>
+            <table>
+                <td id="pres">
+
+                </td>
+                <td>
+                    <center>
+                    <div>
+                        <h1><b>Student Inscription</b></h1>
+                        <form method="post" action="" id="form">
+                            <fieldset>
+                                <legend>N_0 Inscription</legend>
+                                <input id="num" type="number" placeholder="le numero d;inscription" required/>
+                            </fieldset><br>
+                            <fieldset>
+                                <legend>Date d'inscription</legend>
+                                <input id="date" type="date" placeholder="date d'inscription" required/>
+                            </fieldset><br>
+                            <fieldset>
+                                <legend>La classe</legend>
+                                <input id="classe" type="text" placeholder="la classe" required/>
+                            </fieldset><br>
+                            <fieldset>
+                                <legend>Frais d'inscription</legend>
+                                <input id="frais" type="number" placeholder="frais d;inscription" required/>
+                            </fieldset><br>
+                            <input id="sub" type="submit" value="Soumettre" />
+                        </form>
+                    </div>
+                </center>
+                </td>
+            </table>
+        </center>
+    </body>
+</html>
